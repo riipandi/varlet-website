@@ -1,0 +1,52 @@
+# ------------------------------
+# Common ignored files
+# ------------------------------
+.cache
+.DS_Store
+.env
+.env.build
+.eslintcache
+.grunt
+.idea
+.lock-wscript
+.build
+.next
+.node_repl_history
+.npm
+.nuxt
+.nyc_output
+.serverless
+.yarn-integrity
+*.log
+*.pid
+*.pid.lock
+*.seed
+*.swp
+*.tgz
+bower_components
+build/Release
+coverage
+dist
+jspm_packages/
+lib-cov
+logs
+node_modules/
+npm-debug.log*
+pids
+sw.*
+typings/
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ------------------------------
+# Ignored project files
+# ------------------------------
+.vuepress/dist
+/coverage
+/build
+/dist
+/.build
+/.next
+/.nuxt
