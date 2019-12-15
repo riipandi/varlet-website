@@ -26,6 +26,17 @@ const Head = props => (
     <link rel="apple-touch-icon" href="/img/favicon-touch.png" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display:400,700|Quicksand:400,500,700&display=swap" />
+    <script
+      data-name="BMC-Widget"
+      src="//cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="ars"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Would you care to buy me a coffee?"
+      data-color="#FF813F"
+      data-position="right"
+      data-x_margin="16"
+      data-y_margin="16">
+    </script>
   </NextHead>
 )
 

@@ -1,7 +1,10 @@
-# Varlet Dev Website
+# varlet.dev
+
+[![Build Status][build-badge]][build-url]
+[![Join the community on Spectrum][spectrum-badge]][spectrum-url]
 
 This directory is a brief code of [varlet.dev](https://varlet.dev) website that
-can be deployed to ZEIT Now with zero configuration or App Engine.
+can be deployed to ZEIT Now, Netlify, or App Engine.
 
 ## Quick Start
 
@@ -53,3 +56,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
+
+[build-url]: https://travis-ci.com/riipandi/varlet
+[build-badge]: https://travis-ci.com/riipandi/varlet.svg?branch=master
+[spectrum-url]: https://spectrum.chat/varlet
+[spectrum-badge]: https://withspectrum.github.io/badge/badge.svg

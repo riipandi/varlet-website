@@ -1,12 +1,19 @@
-const withCSS = require('@zeit/next-css')
 // const sitemap = require('nextjs-sitemap-generator')
+const withCSS = require('@zeit/next-css')
+const images = require('remark-images')
+const emoji = require('remark-emoji')
+
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)$/,
+  options: {
+    mdPlugins: [images, emoji],
+  },
+})
 
 const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = withCSS({
-  // Hide x-powered-by
+module.exports = withMDX(withCSS({
   poweredByHeader: false,
-
-  // You may only need to add assetPrefix in the production.
-  // assetPrefix: isProd ? '//assets.varlet.dev' : '',
-})
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  assetPrefix: isProd ? '//varlet.dev' : ''
+}))

@@ -1,10 +1,9 @@
 import Link from 'next/link'
 
 const links = [
-  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '//github.com/riipandi/varlet/releases', label: 'Download' },
-  { href: '//spectrum.chat/varlet', label: 'Join Us' }
+  { href: '//spectrum.chat/varlet', target: '_blank', label: 'Join the Community' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -31,9 +30,9 @@ const Nav = () => (
       <div className="hidden lg:flex lg:items-center lg:w-auto w-full text-center md:text-right" id="menu">
           <nav>
               <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-                  {links.map(({ key, href, label }) => (
+                  {links.map(({ key, href, target, label }) => (
                       <li key={key}>
-                          <Link href={href}>
+                          <Link href={href} target={target ? {target} : '_self'}>
                               <a className="lg:p-4 lg:px-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 tracking-tight">{label}</a>
                           </Link>
                       </li>
