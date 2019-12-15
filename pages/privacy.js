@@ -16,7 +16,7 @@ const Privacy = () => {
       <Head title="Privacy Policy - Varlet" />
 
       <div className="lg:px-0 px-5">
-          <div className="max-w-5xl bg-white rounded-lg shadow-md mx-auto my-8 p-8">
+          <div className="container mt-32 mb-20 bg-white rounded-lg shadow-md mx-auto py-10 px-12 text-justify">
               <Document components={{ h1: H1, pre: Pre, code: Code, inlineCode: InlineCode }} />
           </div>
       </div>

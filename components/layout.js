@@ -15,16 +15,10 @@ export default class Layout extends Component {
 
   render () {
     return (
-      <div className="flex flex-col min-h-screen">
-
+      <div className="min-h-screen font-sans">
         <Nav />
-
-        <main className="flex-1 max-w-4xl mx-auto px-4 md:px-0 md:py-4 w-full">
-          {this.props.children}
-        </main>
-
+        {this.props.children}
         <Footer />
-
       </div>
     )
   }
