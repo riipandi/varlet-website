@@ -1,4 +1,4 @@
-# varlet.dev
+# Varlet Dev Website
 
 [![Build Status][build-badge]][build-url]
 [![Join the community on Spectrum][spectrum-badge]][spectrum-url]
@@ -57,7 +57,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
 ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 
-[build-url]: https://travis-ci.com/riipandi/varlet
-[build-badge]: https://travis-ci.com/riipandi/varlet.svg?branch=master
+[build-url]: https://travis-ci.com/riipandi/varlet-site
+[build-badge]: https://travis-ci.com/riipandi/varlet-site.svg?branch=master
 [spectrum-url]: https://spectrum.chat/varlet
 [spectrum-badge]: https://withspectrum.github.io/badge/badge.svg
