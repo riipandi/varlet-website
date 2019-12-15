@@ -15,10 +15,7 @@ node_js:
   - 10
   - 12
 
-cache:
-  npm: true
-  directories:
-    - node_modules
+cache: npm
 
 install: npm install --no-optional --no-audit
 
