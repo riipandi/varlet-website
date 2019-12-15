@@ -34,8 +34,8 @@ const Head = props => (
       data-message="Would you care to buy me a coffee?"
       data-color="#FF813F"
       data-position="right"
-      data-x_margin="16"
-      data-y_margin="16">
+      data-x_margin="18"
+      data-y_margin="22">
     </script>
   </NextHead>
 )

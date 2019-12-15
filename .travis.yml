@@ -2,16 +2,25 @@ language: node_js
 
 env:
   global:
-  - NODE_ENV="production"
+  - NODE_ENV=production
 
-node_js:
-  - 8
-  - 10
-  - 12
+matrix:
+  fast_finish: true
+
 os:
   - windows
   - linux
   - osx
-cache: npm
+
+node_js:
+  - 10
+  - 12
+
+cache:
+  npm: true
+  directories:
+    - node_modules
+
 install: npm install --no-optional --no-audit
+
 scripts: npm run build
