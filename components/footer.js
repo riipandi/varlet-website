@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="container mx-auto px-6 py-10 text-white text-center">
       <p>
         Copyright &copy; 2019 {' - '}
-        Varlet is a project by <a href="//arisio.us" className="inline font-medium border-b border-dashed" target="_blank">Aris Ripandi</a>
+        <span className="hidden md:inline">Varlet is{' '}</span>a project by <a href="//arisio.us" className="inline font-medium border-b border-dashed" target="_blank">Aris Ripandi</a>
       </p>
     </div>
     {/* <div className="container mx-auto px-6 py-10">
