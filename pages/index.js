@@ -12,7 +12,7 @@ const Home = () => {
                     <div className="md:w-1/2 lg:w-1/3 mb-4 sm:mb-16 md:mb-0">
                         <h1 className="text-3xl font-bold text-secondary-600 mb-2">What is Varlet?</h1>
                         <h2 className="text-lg text-secondary leading-normal mb-6 md:mb-10">
-                            Varlet is a a web development environment for minimalists, made for PHP developers who like to work in the terminal, like me!
+                            Varlet is a web development environment for minimalists, made for PHP developers who like flexibility, like me!
                         </h2>
                         <a
                             href="//github.com/riipandi/varlet/releases/latest"
@@ -20,6 +20,10 @@ const Home = () => {
                             className="bg-primary px-4 md:px-6 py-2 md:py-3 text-lg md:text-md text-secondary font-semibold rounded hover:bg-primary-400">
                             Download Current Version
                         </a>
+                        <p className="mt-8 text-sm italic">
+                            The Varlet package does not include any database engine,<br/>but you can try our {' '}
+                            <a href="//github.com/riipandi/varlet-addons" className="border-b hover:text-blue">add-on</a>.
+                        </p>
                     </div>
                     <div className="mt-16 sm:mt-0 flex-1 flex justify-end">
                         <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/annotation_7das.svg" />
