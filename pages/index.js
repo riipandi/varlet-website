@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <Layout>
         <Head title="Varlet - Minimalism web development stack" />
+
         <div className="relative overflow-hidden px-6 pb-6">
             <img src="img/wave.svg" className="absolute top-0 left-2/5" />
             <div className="container mx-auto relative">
@@ -104,7 +105,8 @@ const Home = () => {
 
         <div id="about-us" className="bg-blue-100 py-24">
             <div id="contact" className="container mx-auto px-6">
-                <h3 className="flex flex-col items-center text-4xl text-secondary font-bold mb-12">I need more info! <span className="bg-primary h-1 w-20 block mt-4"></span></h3>
+                <h3 className="flex flex-col items-center text-4xl text-secondary font-bold mb-6">I need more info! <span className="bg-primary h-1 w-20 block mt-4"></span></h3>
+                <h2 className="text-center text-xl mb-12">Subscribe to our newsletter for updates and more thoughts.</h2>
                 <div className="flex shadow-lg md:w-2/3 lg:w-1/2 xl:w-2/5 p-1 rounded-full overflow-hidden mx-auto bg-white">
                     <input type="text" name="" placeholder="Insert your mail" className="h-16 text-secondary-700 w-64 flex-1 px-8 text-lg focus:outline-none" />
                     <button className="bg-primary w-32 uppercase font-bold text-secondary rounded-full">Send</button>

@@ -27,7 +27,7 @@ const Head = props => (
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700|Titillium+Web:400,600,700&display=swap" />
     <script src="//cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script
+    {/* <script
       data-name="BMC-Widget"
       src="//cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
       data-id="ars"
@@ -37,7 +37,7 @@ const Head = props => (
       data-position="right"
       data-x_margin="18"
       data-y_margin="18">
-    </script>
+    </script> */}
   </NextHead>
 )
 

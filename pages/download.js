@@ -17,16 +17,34 @@ const Download = () => {
 
       <Head title="Download - Varlet" />
 
-      <div className="lg:px-0 px-5">
-          <div className="max-w-5xl bg-white rounded-lg shadow-md mx-auto my-8 p-8">
-              <h1 className="text-2xl font-bold tracking-normal font-sans">Coming soon!</h1>
-              <h2 className="font-medium text-md text-gray-600 mt-3 tracking-tight">Our website under development.</h2>
+      <div className="relative overflow-hidden px-6 lg:px-0">
+        <div id="about-us" className="bg-blue-100 mt-32 py-12">
+            <div className="container mx-auto px-6">
+            <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/2 md:pr-8 lg:pr-16">
+                <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/online_everywhere_cd90.svg" className="-mt-24 md:mt-0 lg:-mt-24 mb-16 md:mb-0" />
+                </div>
+                <div className="md:w-1/2">
+                <h3 className="flex flex-col text-4xl text-secondary font-bold mb-6">Download Varlet <span className="bg-primary h-1 w-48 block mt-4"></span></h3>
+                <p className="text-lg text-secondary-700 mb-4">
+                  Current version is {release ? <span><b>v{release.version}</b></span> : <span className="loading"></span>}{', '}
+                  you can download at <a target="_blank" href="//github.com/riipandi/varlet/releases" className="font-medium border-b-2 border-dashed text-indigo-500">Github</a>.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
 
-              <p className="font-medium text-xl text-gray-700 mt-8 mb-2 tracking-wide">
-                Current version is {release ? <span><b>v{release.version}</b></span> : <span className="loading"></span>}{', '}
-                you can download at <a target="_blank" href="//github.com/riipandi/varlet/releases" className="font-medium border-b-2 border-dashed text-indigo-500">Github</a>.
-              </p>
-          </div>
+        <div id="about-us" className="bg-blue-100 py-24">
+            <div id="contact" className="container mx-auto px-6">
+                <h3 className="flex flex-col items-center text-4xl text-secondary font-bold mb-6">I need more info! <span className="bg-primary h-1 w-20 block mt-4"></span></h3>
+                <h2 className="text-center text-xl mb-12">Subscribe to our newsletter for updates and more thoughts.</h2>
+                <div className="flex shadow-lg md:w-2/3 lg:w-1/2 xl:w-2/5 p-1 rounded-full overflow-hidden mx-auto bg-white">
+                    <input type="text" name="" placeholder="Insert your mail" className="h-16 text-secondary-700 w-64 flex-1 px-8 text-lg focus:outline-none" />
+                    <button className="bg-primary w-32 uppercase font-bold text-secondary rounded-full">Send</button>
+                </div>
+            </div>
+        </div>
       </div>
 
     </Layout>

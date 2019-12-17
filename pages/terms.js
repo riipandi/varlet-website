@@ -1,11 +1,11 @@
 import Layout from "@components/layout";
 import Head from '@components/head'
 
-const Home = () => {
+const Terms = () => {
   return (
     <Layout>
 
-      <Head title="Varlet - Minimalism web development stack" />
+      <Head title="Terms of Service - Varlet" />
 
       <div className="lg:px-0 px-5">
           <div className="container mt-32 mb-20 bg-white rounded-lg shadow-md mx-auto py-10 px-12 text-justify">
@@ -48,4 +48,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Terms
