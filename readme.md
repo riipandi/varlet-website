@@ -34,7 +34,7 @@ $ npx next telemetry status
 
 ## Contribution
 
-If you want to contribute, please, feel free to look into the [issues](https://github.com/riipandi/varlet-site/issues).
+If you want to contribute, please, feel free to look into the [issues](https://github.com/varletdev/website/issues).
 All help is welcome as the project is only getting bigger. To submit a feature, bug fix, or enhancement to the website
 proceed as follows:
 
@@ -57,7 +57,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
 ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 
-[build-url]: https://travis-ci.com/riipandi/varlet-site
-[build-badge]: https://api.travis-ci.com/riipandi/varlet-site.svg?branch=master
+[build-url]: https://travis-ci.com/varletdev/website
+[build-badge]: https://api.travis-ci.com/varletdev/website.svg?branch=master
 [spectrum-url]: https://spectrum.chat/varlet
 [spectrum-badge]: https://withspectrum.github.io/badge/badge.svg

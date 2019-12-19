@@ -186,7 +186,7 @@ export default function Layout({ meta, children }) {
       </div>
 
       <div className="bg-gray-200">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 xl:px-0 py-4 text-sm lg:text-lg font-medium flex items-center justify-center">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 xl:px-0 py-4 text-xs md:text-sm lg:text-lg font-medium flex items-center justify-center">
           <a className="text-gray-600 hover:text-gray-800" href="//github.com/varletdev/varlet/releases/latest" title="Current version">
             <strong>Version 1.2.0{' '}</strong>
           </a>
