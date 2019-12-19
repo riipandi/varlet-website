@@ -4,7 +4,7 @@ import Link from 'next/link'
 // import dedent from 'dedent-js'
 import Mousetrap from 'mousetrap'
 import { MDXProvider } from '@mdx-js/react'
-// import TabbedCodeExamples from './TabbedCodeExamples'
+// import TabbedCode from './TabbedCode'
 import MarkdownComponents from './MarkdownComponents'
 import React, { useState, useEffect, useRef } from 'react'
 

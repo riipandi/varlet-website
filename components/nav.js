@@ -56,6 +56,11 @@ export default ({ className }) => {
             <a className={linkClass('/docs/installation')}>Installation</a>
           </Link>
         </li>
+        <li className="md:pr-3">
+          <Link href="/docs/upgrading">
+            <a className={linkClass('/docs/upgrading')}>Upgrading</a>
+          </Link>
+        </li>
       </ul>
       <div className="mt-12 mb-3 text-xs font-bold uppercase text-gray-500 tracking-widest">Documentation</div>
       <ul>

@@ -1,6 +1,6 @@
 import Code from './Code'
 import Link from 'next/link'
-import TabbedCodeExamples from './TabbedCodeExamples'
+import TabbedCode from './TabbedCode'
 
 function kebabCase(str) {
   return str
@@ -47,6 +47,6 @@ export default {
       children={children}
     />
   ),
-  TabbedCodeExamples: props => <TabbedCodeExamples className="my-8 rounded overflow-hidden" {...props} />,
+  TabbedCode: props => <TabbedCode className="my-8 rounded overflow-hidden" {...props} />,
   inlineCode: props => <code className="font-mono text-sm bg-gray-200 rounded p-1 whitespace-no-wrap" {...props} />,
 }

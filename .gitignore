@@ -45,8 +45,9 @@ yarn.lock
 # ------------------------------
 .vuepress/dist
 /coverage
-/build
-/dist
 /.build
 /.next
 /.nuxt
+/build
+/dist
+/out
