@@ -57,7 +57,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
 ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 
-[build-url]: https://travis-ci.com/varletdev/website
-[build-badge]: https://api.travis-ci.com/varletdev/website.svg?branch=master
+[build-url]: https://travis-ci.org/varletdev/website
+[build-badge]: https://api.travis-ci.org/varletdev/website.svg?branch=master
 [spectrum-url]: https://spectrum.chat/varlet
 [spectrum-badge]: https://withspectrum.github.io/badge/badge.svg
