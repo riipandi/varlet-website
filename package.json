@@ -10,7 +10,6 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "next export",
     "prod": "next build && next export",
     "start": "next start -p 8080"
   },
