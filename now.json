@@ -21,12 +21,7 @@
       "dest": "/_next/$1"
     },
     {
-      "src": "/_next/*.js",
-      "headers": { "key" : "accept-encoding", "value" : "gzip, deflate" },
-      "dest": "/_next/$1"
-    },
-    {
-      "src": "/_next/*.css",
+      "src": "/_next/(.*)",
       "headers": { "key" : "accept-encoding", "value" : "gzip, deflate" },
       "dest": "/_next/$1"
     },
