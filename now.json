@@ -22,12 +22,12 @@
     },
     {
       "src": "/_next/*.js",
-      "headers": { "Content-Type": "text/javascript", "Cache-Control": "public, max-age=604800, must-revalidate" },
+      "headers": { "key" : "accept-encoding", "value" : "gzip, deflate" },
       "dest": "/_next/$1"
     },
     {
       "src": "/_next/*.css",
-      "headers": { "Content-Type": "text/css", "Cache-Control": "public, max-age=604800, must-revalidate" },
+      "headers": { "key" : "accept-encoding", "value" : "gzip, deflate" },
       "dest": "/_next/$1"
     },
     {
@@ -38,6 +38,7 @@
       },
       "dest": "/img/$1"
     },
+    { "src": "/release", "dest": "/api/release" },
     {
       "src": "/latest",
       "status": 301,
