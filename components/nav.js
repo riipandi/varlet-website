@@ -1,56 +1,123 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-const links = [
-  { href: '/about', label: 'About' },
-  { href: '//github.com/riipandi/varlet/releases', target: '_blank', label: 'Download' },
-  { href: '//github.com/riipandi/varlet-addons', target: '_blank', label: 'Add-Ons' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+export default ({ className }) => {
+  const router = useRouter()
 
-const Nav = () => (
-  <header className="py-4 px-6 absolute top-0 left-0 right-0 z-10">
-    <div className="container mx-auto">
-      <div className="flex items-center">
-        <div className="flex-1">
-          <Link href='/'>
-            <img src="/img/site-logo-md.png" className="h-16 cursor-pointer" />
+  function linkClass(path) {
+    return router.pathname === path
+      ? `block -ml-3 pl-3 pr-2 py-2 font-medium border-l-4 rounded-r border-teal-400 bg-teal-200 text-teal-700`
+      : `inline-block py-2 hover:text-blue-700 hover:underline font-medium text-gray-700`
+  }
+
+  return (
+    <nav className={className}>
+      <ul>
+        <li className="md:pr-3">
+          <Link href="/">
+            <a className={linkClass('/')}>Introduction</a>
           </Link>
-        </div>
-        <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
-            <svg className="fill-current text-gray-900 lg:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
-        </label>
-        <input className="hidden" type="checkbox" id="menu-toggle" />
-        <div className="hidden lg:flex lg:items-center lg:w-auto w-full text-center md:text-right" id="menu">
-          <nav className="hidden lg:flex items-center">
-            <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-              {/* {links.map(({ key, href, target, label }) => (
-                <li key={key}>
-                  <Link href={href}>
-                    <a className="px-4 py-3 font-bold uppercase text-secondary hover:text-primary" target={target ? {target} : '_self'}>{label}</a>
-                  </Link>
-                </li>
-              ))} */}
-              <li>
-                <a href="#about-us" data-scroll className="px-4 py-3 font-bold uppercase text-secondary hover:text-primary">About</a>
-              </li>
-              <li>
-                <a href="//github.com/riipandi/varlet/releases" target="_blank" className="px-4 py-3 font-bold uppercase text-secondary hover:text-primary">Download</a>
-              </li>
-              <li>
-                <a href="//github.com/riipandi/varlet-addons" target="_blank" className="px-4 py-3 font-bold uppercase text-secondary hover:text-primary">Add-Ons</a>
-              </li>
-              <li>
-                <a href="//spectrum.chat/varlet" target="_blank" className="ml-4 px-4 py-2 font-bold uppercase bg-primary hover:bg-primary-400 text-secondary rounded">Join The Community</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <style jsx>{`#menu-toggle:checked + #menu { display: block; }`}</style>
-  </header>
-)
-
-export default Nav
+        </li>
+        <li className="md:pr-3">
+          <Link href="/features">
+            <a className={linkClass('/features')}>Features</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/screenshots">
+            <a className={linkClass('/screenshots')}>Screenshots</a>
+          </Link>
+        </li>
+        {/* <li className="md:pr-3">
+          <Link href="/sponsors">
+            <a className={linkClass('/sponsors')}>Sponsors</a>
+          </Link>
+        </li> */}
+      </ul>
+      <div className="mt-12 mb-3 text-xs font-bold uppercase text-gray-500 tracking-widest">Getting started</div>
+      <ul>
+        <li className="md:pr-3">
+          <Link href="/who-is-it-for">
+            <a className={linkClass('/who-is-it-for')}>Who is it for</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/how-it-works">
+            <a className={linkClass('/how-it-works')}>How it works</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/directory-structure">
+            <a className={linkClass('/docs/directory-structure')}>Directory Structure</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/installation">
+            <a className={linkClass('/docs/installation')}>Installation</a>
+          </Link>
+        </li>
+      </ul>
+      <div className="mt-12 mb-3 text-xs font-bold uppercase text-gray-500 tracking-widest">Documentation</div>
+      <ul>
+        <li className="md:pr-3">
+          <Link href="/docs/serving-site">
+            <a className={linkClass('/docs/serving-site')}>Serving Site</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/pretty-url">
+            <a className={linkClass('/docs/pretty-url')}>Pretty URLs</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/commandline">
+            <a className={linkClass('/docs/commandline')}>Command Line</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/controlling-services">
+            <a className={linkClass('/docs/controlling-services')}>Controlling Services</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/smtp-mail-catcher">
+            <a className={linkClass('/docs/smtp-mail-catcher')}>SMTP Mail Catcher</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/extending-packages">
+            <a className={linkClass('/docs/extending-packages')}>Extending Packages</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/docs/sharing-site">
+            <a className={linkClass('/docs/sharing-site')}>Sharing Site</a>
+          </Link>
+        </li>
+      </ul>
+      <div className="mt-12 mb-3 text-xs font-bold uppercase text-gray-500 tracking-widest">Resources</div>
+      <ul>
+        <li className="md:pr-3">
+          <Link href="/license">
+            <a className={linkClass('/license')}>License</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/privacy-policy">
+            <a className={linkClass('/privacy-policy')}>Privacy Policy</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/credits">
+            <a className={linkClass('/credits')}>Credits</a>
+          </Link>
+        </li>
+        <li className="md:pr-3">
+          <Link href="/faq">
+            <a className={linkClass('/faq')}>FAQ</a>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
+}

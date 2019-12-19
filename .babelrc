@@ -1,5 +1,8 @@
 {
-  "presets": ["next/babel"],
+  "presets": [
+    "next/babel",
+    "@emotion/babel-preset-css-prop"
+  ],
   "plugins": [
     [
         "module-resolver",
@@ -7,8 +10,7 @@
             "root": ["."],
             "alias": {
                 "@components": "./components",
-                "@content": "./content",
-                "@styles": "./styles"
+                "@public": "./public"
             }
         },
     ],
