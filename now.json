@@ -1,4 +1,47 @@
 {
+  "version": 2,
   "name":"varlet",
-  "scope": "riipandi"
+  "scope": "riipandi",
+  "public": true,
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "routes": [
+    {
+      "src": "/_next/(.*)",
+      "headers": {
+        "key" : "Cache-Control",
+        "value" : "public, max-age=604800, must-revalidate"
+      },
+      "dest": "/_next/$1"
+    },
+    {
+      "src": "/_next/*.js",
+      "headers": { "Content-Type": "text/javascript", "Cache-Control": "public, max-age=604800, must-revalidate" },
+      "dest": "/_next/$1"
+    },
+    {
+      "src": "/_next/*.css",
+      "headers": { "Content-Type": "text/css", "Cache-Control": "public, max-age=604800, must-revalidate" },
+      "dest": "/_next/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "headers": {
+        "key" : "Cache-Control",
+        "value" : "public, max-age=604800, must-revalidate"
+      },
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/latest",
+      "status": 301,
+      "headers": { "Location": "https://github.com/varletdev/varlet/releases/latest" }
+    }
+  ]
 }

@@ -58,7 +58,7 @@ export default function Layout({ meta, children }) {
     >
       <Head>
         <title>{meta.title ? `${meta.title} - Varlet` : `Varlet - Minimalism web development stack`}</title>
-        {meta.description && <meta type="description" content={meta.description} />}
+        {meta.description && <meta name="description" content={meta.description} />}
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         {meta.twitterCardImage && (
           <React.Fragment>
@@ -70,6 +70,7 @@ export default function Layout({ meta, children }) {
             <meta name="twitter:image" content={meta.twitterCardImage} />
           </React.Fragment>
         )}
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap" />
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         <script defer src="//cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
         <script async src="//www.googletagmanager.com/gtag/js?id=UA-146606706-7"></script>
