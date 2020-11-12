@@ -1,36 +1,41 @@
 {
   "name": "varlet-website",
-  "version": "1.0.0",
-  "description": "Official varlet.dev website",
-  "author": "Aris Ripandi <aris@ripandi.id>",
-  "engines": {
-    "node": ">=10.0"
-  },
-  "license": "Apache-2.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "prod": "next build && next export",
-    "start": "next start -p 8080"
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
   },
   "dependencies": {
-    "@emotion/babel-preset-css-prop": "^10.0.23",
-    "@emotion/core": "^10.0.22",
-    "@fullhuman/postcss-purgecss": "^1.3.0",
-    "@mdx-js/loader": "^1.5.2",
-    "@next/mdx": "^9.1.6",
-    "@zeit/next-css": "^1.0.1",
-    "autoprefixer": "^9.7.3",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "babel-plugin-styled-components": "^1.10.6",
-    "dedent-js": "^1.0.1",
-    "mousetrap": "^1.6.3",
-    "next": "9.1.6",
-    "postcss-nested": "^4.2.1",
-    "react-dom": "16.12.0",
-    "react-syntax-highlighter": "^12.2.1",
-    "react": "16.12.0",
-    "styled-components": "^4.4.1",
-    "tailwindcss": "1.1.4"
+    "gridsome": "^0.7.0",
+    "medium-zoom": "^1.0.6",
+    "tinykeys": "^1.0.4"
+  },
+  "devDependencies": {
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@gridsome/remark-prismjs": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.5.0",
+    "@iconify/icons-bx": "^1.0.3",
+    "@iconify/icons-heroicons-outline": "^1.0.1",
+    "@iconify/icons-heroicons-solid": "^1.0.1",
+    "@iconify/vue": "^1.0.2",
+    "@tailwindcss/typography": "^0.2.0",
+    "fuse.js": "^3.4.6",
+    "postcss-font-magician": "^2.3.1",
+    "postcss-nested": "^4.2.3",
+    "prism-themes": "^1.3.0",
+    "tailwindcss": "^1.6",
+    "tailwindcss-theming": "^3.0.0-beta.1"
   }
 }

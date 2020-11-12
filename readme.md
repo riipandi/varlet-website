@@ -20,17 +20,7 @@ $ npm run build
 $ npm run start
 ```
 
-> For detailed explanation on how things work, check out [Next.js docs](https://nextjs.org).
-
-### Disable Next.js Telemetry
-
-Next.js now collects completely anonymous telemetry regarding usage.
-
-```sh
-$ npx next telemetry disable
-
-$ npx next telemetry status
-```
+> For detailed explanation on how things work, check out [Gridsome docs](https://gridsome.org).
 
 ## Contribution
 
