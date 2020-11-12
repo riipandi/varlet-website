@@ -75,7 +75,8 @@ dist
 
 # vuepress build output
 .vuepress/dist
-src/.temp/
+src/.temp/*
+!src/.temp/.gitkeep
 
 # Serverless directories
 .serverless
