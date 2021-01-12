@@ -12,7 +12,7 @@ export default function Home() {
         <title>Varlet - Minimalism web development stack</title>
       </Head>
       {/* <SampleHomepage /> */}
-      <section className="pb-8 mt-12 bg-gradient-to-r from-secondary-400 to-primary-700 lg:mt-24">
+      <section className="pb-8 mt-12 bg-gradient-to-r from-secondary-400 to-primary-700 lg:mt-20">
         <div className="relative px-4 mx-auto mt-4 max-w-7xl sm:mt-8 sm:px-6">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-200 sm:text-5xl md:text-6xl">
