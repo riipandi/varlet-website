@@ -10,7 +10,7 @@ export function SectionCta({}) {
               {/* <span className="block">Start your free trial today.</span> */}
             </h2>
             <p className="mt-4 text-lg leading-6 text-gray-200">
-              ElisCP is still a WIP (but you knew that). Sign up to join the open beta and keep
+              Varlet is still a WIP (but you knew that). Sign up to join the open beta and keep
               updated on our progress.
             </p>
             <a
