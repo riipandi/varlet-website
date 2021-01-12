@@ -1,39 +1,40 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
-const typography = require('./typography.config');
+const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultColor = require('tailwindcss/colors')
 
 module.exports = {
-  purge: {
-    content: ['./src/**/*.vue', './src/**/*.md'],
-    options: {
-      whitelistPatterns: [/token$/]
-    }
-  },
-
+  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...fontFamily.sans]
+        sans: ['Gellix', ...defaultTheme.fontFamily.sans]
       },
-      inset: {
-        10: '4.5rem',
-        12: '5rem',
-        14: '5.5rem',
-        16: '6rem',
-        18: '6.5rem'
-      },
-      width: {
-        sidebar: '20rem'
+      colors: {
+        gray: defaultColor.coolGray,
+        primary: defaultColor.purple,
+        secondary: {
+          50: '#f2f7f7',
+          100: '#e6efef',
+          200: '#bfd8d8',
+          300: '#99c1c0',
+          400: '#4d9290',
+          500: '#006361',
+          600: '#005957',
+          700: '#004a49',
+          800: '#003b3a',
+          900: '#003130'
+        },
+        accent: defaultColor.green
       }
-    },
-
-    typography
+    }
   },
-
   variants: {
-    boxShadow: ['focus', 'responsive', 'focus-visible'],
-    typography: ['responsive'],
-    animation: ['motion-safe']
+    extend: {}
   },
-
-  plugins: [require('tailwindcss-theming'), require('@tailwindcss/typography')]
-};
+  plugins: [
+    // Additional first-party plugins
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio')
+  ]
+}
