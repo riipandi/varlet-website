@@ -1,32 +1,33 @@
-# Varlet Dev Website
+# Varlet Website
 
 [![Build Status][build-badge]][build-url]
-[![Join the community on Spectrum][spectrum-badge]][spectrum-url]
+[![MIT License][license-badge]][license-badge]
 
-This directory is a brief code of [varlet.dev](https://varlet.dev) website that
-can be deployed to ZEIT Now, Netlify, or App Engine.
+This directory is a brief code of [varlet.dev](https://varlet.dev) website 
+that can be deployed to Vercel, or Cloudflare Pages.
 
 ## Quick Start
 
 ```bash
 # install dependencies
-$ npm install --no-optional --prefer-offline --no-audit
+$ yarn install --non-interactive
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 
 # build for production and launch server
-$ npm run build
-$ npm run start
+$ yarn build
+$ yarn start
 ```
 
 > For detailed explanation on how things work, check out [Next.js docs](https://nextjs.org).
 
 ## Contribution
 
-If you want to contribute, please, feel free to look into the [issues](https://github.com/riipandi/varlet/issues).
-All help is welcome as the project is only getting bigger. To submit a feature, bug fix, or enhancement to the website
-proceed as follows:
+If you want to contribute, please, feel free to look into the 
+[issues](https://github.com/riipandi/varlet/issues). All help 
+is welcome as the project is only getting bigger. To submit a 
+feature, bug fix, or enhancement to the website proceed as follows:
 
 1. Clone this repository
 2. Follow the Quick Start step
@@ -34,20 +35,19 @@ proceed as follows:
 
 I really appreciate any contribution.
 
+## Thanks to...
+
+In general, I'd like to thank every single one who open-sources their
+source code for their effort to contribute something to the open-source
+community. Your work means the world! 🌍 ❤️
+
 ## License
 
-Copyright 2019 - Aris Ripandi
+This project is open-sourced software licensed under the [MIT license](https://aris.mit-license.org).
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
-file except in compliance with the License. You may obtain a copy of the License at:
-<http://www.apache.org/licenses/LICENSE-2.0>
-
-Unless required by applicable law or agreed to in writing, software distributed under
-the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
-ANY KIND, either express or implied. See the License for the specific language
-governing permissions and limitations under the License.
+Copyrights in this project are retained by their contributors.
+See the [license file](./license.txt) for more information.
 
 [build-url]: https://travis-ci.org/riipandi/varlet-website
 [build-badge]: https://api.travis-ci.org/riipandi/varlet-website.svg?branch=master
-[spectrum-url]: https://spectrum.chat/varlet
-[spectrum-badge]: https://withspectrum.github.io/badge/badge.svg
+[license-badge]: https://img.shields.io/github/license/riipandi/next-tailwind-starter?style=flat-square
